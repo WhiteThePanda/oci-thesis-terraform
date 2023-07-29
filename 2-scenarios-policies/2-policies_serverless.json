@@ -1,0 +1,23 @@
+{
+    "policies": [
+        {
+            "policy_name": "THESIS_USERS_SERVERLESS_GROUP_POLICY",
+            "policy_description": "Policy for users to create serverless functions",
+            "policy_statements": [
+                "allow group 'THESIS_USERS' to manage functions-family in compartment Pwn",
+                "allow group 'THESIS_USERS' to read metrics in compartment Pwn",
+                "allow group 'THESIS_USERS' to use virtual-network-family in compartment Pwn",
+                "allow group 'THESIS_USERS' to manage repos in tenancy where target.repo.name =/thesis∗/"
+
+            ]
+        },
+        {
+            "policy_name": "SERVERLESS_FUNCTIONS_GROUP_POLICY",
+            "policy_description": "Policy for functions to access services",
+            "policy_statements": [
+                "allow service FaaS to use virtual-network-family in compartment Pwn",
+                "allow service FaaS to read repos in tenancy"
+            ]
+        }
+    ]
+}

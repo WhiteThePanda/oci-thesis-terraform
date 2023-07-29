@@ -1,0 +1,18 @@
+{
+    "policies": [
+        {
+            "policy_name": "instances-storage-reports-policy",
+            "policy_description": "Storage policy for tagged instances",
+            "policy_statements": [
+                "allow dynamic-group bucket-instances to manage objects in compartment Pwn where target.bucket.name='thesis-reports'"
+            ]
+        },
+        {
+            "policy_name": "thesis-users-use-tag",
+            "policy_description": "Allow users to use tags",
+            "policy_statements": [
+                "Allow group 'THESIS_USERS' to use tag-namespaces in compartment Pwn"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+terraform_api_public.pem
+terraform_api.pem
+tfvars_admin.env.sh
+tfvars_thesis_user.sh
+**/.terraform
+**/.terraform.lock.hcl
+**/.terraform.tfstate
+**/.terraform.tfstate.backup
+**/**/.terraform
+**/**/.terraform.lock.hcl
+**/**/.terraform.tfstate
+**/**/.terraform.tfstate.backup

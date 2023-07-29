@@ -1,0 +1,15 @@
+{
+    "policies": [
+        {
+            "policy_name": "THESIS_USERS_COMPUTE_GROUP_POLICY",
+            "policy_description": "Policy for users to create compute instances",
+            "policy_statements": [
+                "Allow group 'THESIS_USERS' to manage instance-family in compartment Pwn",
+                "Allow group 'THESIS_USERS' to read app-catalog-listing in compartment Pwn",
+                "Allow group 'THESIS_USERS' to use volume-family in compartment Pwn",
+                "Allow group 'THESIS_USERS' to use virtual-network-family in compartment Pwn"
+
+            ]
+        }
+    ]
+}
